@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>AP1 交互式2D分形</title>
+  <style>
+    body { margin: 0; background: #111; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    canvas { border: 1px solid #333; }
+    .lil-gui { --width: 280px; }
+  </style>
+</head>
+<body>
+  <canvas id="glCanvas" width="800" height="800"></canvas>
+
+  <!-- 教材工具库 -->
+  <script src="./Common/webgl-utils.js"></script>
+  <script src="./Common/MV.js"></script>
+  <script src="./Common/initShaders.js"></script>
+
+  <!-- 第三方库 -->
+  <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.19.2/dist/lil-gui.umd.min.js"></script>
+
+  <!-- 项目模块 -->
+  <script src="./js/fractal.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
